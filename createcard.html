@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCG Create</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<header class="head-global">
+    <div >
+        <a href="main.html" class="logo">
+            <div class="betweenlogo">
+                <h1 class="title red" >C</h1>
+                <h1 class="title white" >reate</h1>
+            </div>
+            <h1 class="title red">CCG</h1>
+            <div class="betweenlogo">
+                <h1 class="title red" >C</h1>
+                <h1 class="title white">ard</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="left-header">
+        <div class="language-switcher">
+
+            <select id="language-select">
+
+                <option class="rus" value="rus">Русский</option>
+                <option class="eng"  value="eng">English</option>
+            </select>
+        </div>
+
+        <div id="donation">
+            <button>
+                <a href="https://www.donationalerts.com/r/kushe">Donate</a>
+            </button>
+
+        </div>
+    </div>
+    <!--донат-->
+</header>
+<main>
+
+
+    <img src="./images/cardback.jpg" alt="" id="back" class="backcreate">
+    <div class="card-div">
+        <canvas id="card-canvas" width="736" height="467">
+            <img src="./images/formatted.png" alt="CARD" class="card">
+            <img src="./images/example.png" alt="CARD" class="card">
+        </canvas>
+        <form class="do" method="POST" action="#" id="cardform" novalidate data-js-form>
+	        <div class="field">
+                <label for="name-input" class="main-label" data-translate="cardData">Данные карточки</label>
+                <input  data-translate-placeholder="enterName" type="text" id="name-input" placeholder="Введите имя" class="inputik" name="name" minlength="3" maxlength="16" required  aria-errormessage="name-input-errors" pattern="[A-Za-z]{3,16}">
+                <span class="field__errors" data-js-form-field-errors id="name-input-errors" style="display: block;"></span>
+            </div>
+     	    <div class="field">
+
+                <input type="text" id="date-input" class="inputik" placeholder="Введите дату" name="date" maxlength="5" required required data-translate-placeholder="enterDate">
+                <span class="field__errors" data-js-form-field-errors id="date-input-errors"></span>
+            </div>
+            <div class="field">
+                <label for="photo-input" class="main-label file-input-label" data-translate="uploadPhoto">Загрузить фото </label>
+                <input type="file" id="photo-input" class="inputik file-input" name="photo" >
+
+            </div>
+            <button id="download" type="submit">Скачать</button>
+        </form>
+
+    </div>
+
+</main>
+<footer>
+    <div id="footer-main">
+        <div>
+            <h1 id="footer-title">CCGCARDCREATE</h1>
+            <h3 class="footer-subtitle "  >Contact <a target="_blank" href="https://t.me/rootkitt3n">tg(clickable)</a>
+            </h3>
+            <h4 class="footer-subtitle">Copyright © KiokeProducts 2025</h4>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/create.js"></script>
+<script src="js/languagesecond.js"></script>
+
+</body>
+</html>

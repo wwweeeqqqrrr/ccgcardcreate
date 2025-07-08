@@ -1,0 +1,335 @@
+@import 'https://unpkg.com/@a1rth/css-normalize@1.1.3/index.css';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black; /* на случай, если контента будет мало */
+
+}
+
+/*HEADER*/
+.head-global{
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    z-index: 10;
+    padding: 20px;
+    position: fixed;
+    height: 5.5rem;
+    display: flex;
+}
+
+.betweenlogo{
+    display: flex;
+
+}
+#donation{
+    margin: auto;
+
+}
+#donation>button{
+    background: transparent;
+    border: 1px solid indianred;
+    padding: 0.5rem ;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-family: 'CopperplateDefault',sans-serif;
+
+}
+#donation>button>a:hover{
+    filter: brightness(80%);
+    transition: filter 0.3s ease;
+
+}
+#donation>button>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.title{
+    font-size: 3rem;
+    line-height: 1;
+
+}
+.left-header{
+    display: flex;
+    margin: auto 0 auto auto
+}
+.logo{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    text-decoration: none;
+
+}
+.white{
+    color: whitesmoke;
+    font-family: 'CopperplateLight',sans-serif;
+
+}
+.language-switcher {
+    margin: 0 auto;
+    margin-right: 2rem;
+
+}
+#language-selectw{
+    color: red;
+    background: green;
+}
+#language-select {
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid indianred;
+    border-radius: 5px;
+    padding: 0.4rem ;
+    font-size: 1.5rem;
+    font-family: 'CopperplateDefault', sans-serif;
+    cursor: pointer;
+}
+
+#language-select option {
+    background: rgba(20, 20, 20, 0.8);
+    filter: brightness(80%);
+
+}
+#language-select option:hover {
+    background: rgba(20, 20, 22, 0.8);
+    color: red;
+
+}
+
+.red{
+    font-size: 3.5rem;
+    display: inline-block;
+    transform: translateY(-0.1em);
+    color: indianred;
+    font-family: 'CopperplateLight',sans-serif;
+
+}
+.betweenlogo:hover .red,
+.betweenlogo:hover .white,
+.logo>h1:hover {
+    filter: brightness(80%);
+    transition: filter 0.3s ease;
+}
+#back{
+    max-width: 100%;
+    height: 100%;
+   display: block;
+
+}
+
+/*MAIN*/
+main {
+    flex: 1;
+    position: relative;
+    background-color: black;
+}
+.main-div{
+    position: absolute;
+    top: 28rem;
+    left: 10rem;
+
+
+}
+.description{
+    white-space: pre-line;
+    margin-bottom: 2rem;
+}
+.main-div-title h1{
+    font-size: 4rem;
+    color:indianred;
+    font-family: 'CopperplateDefault',sans-serif;
+}
+.main-div-title h3{
+    font-size: 1.5rem;
+    color:whitesmoke;
+    font-family: 'CopperplateLight',sans-serif;
+    line-height: inherit;
+    margin-top: 1rem;
+}
+#create-button{
+    padding: 1rem 1rem;
+    background: rgba(28, 26, 27, 0.8);
+    border: 1px solid indianred;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'CopperplateDefault',sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color:whitesmoke;
+    
+
+}
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    box-shadow: inset 0 -10px 10rem rgba(0, 0, 0, 1);
+    z-index: 11;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#footer-main > div{
+
+    color:white;
+    display: block;
+    justify-items: center;
+}
+#footer-title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-family: 'CopperplateDefault',sans-serif;
+    color:whitesmoke;
+
+}
+.footer-subtitle a {
+    text-decoration: none;
+    color: indianred;
+
+}
+.footer-subtitle{
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'CopperplateLight',sans-serif;
+
+}
+/*card create*/
+.backcreate{
+    filter: blur(5px);
+}
+.card-div{
+    position: absolute;
+    bottom: 18rem;
+    right: 30rem;
+    background-color: rgba(25, 25, 25, 0.5);
+    border: 1px solid gray;
+    border-radius: 35px ;
+    width: 55vw;
+    height: 55vh;
+}
+.card{
+    position: absolute;
+    right: 1.5rem;
+    top:1.5rem;
+
+
+    z-index:14
+
+}
+.do{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 2.2rem;
+    left:1.5rem;
+    width:20rem;
+    row-gap: 1rem;
+    -webkit-gap: 4rem;
+    -moz-gap: 4rem;
+
+}
+
+.inputik{
+    background: #778b8c;
+    color: rgba(28, 26, 27, 1);
+    border: 1px solid indianred;
+    border-radius: 5px;
+    padding: 0.6rem ;
+    font-size: 1.5rem;
+    width: 75%;
+    font-family: 'Recta',sans-serif;
+    text-transform: uppercase;
+
+
+
+}
+.main-label{
+    color: whitesmoke;
+    font-family: 'CopperplateDefault',sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top:0;
+
+}
+
+.inputik::placeholder{
+    color: rgba(28, 26, 27, 1);
+    font-family: 'Recta',sans-serif;
+    font-size: 1.5rem;
+    text-transform: none;
+
+
+}
+:is(input,button):focus{
+    outline: none;
+    border-color: #edabab;
+}
+.field__errors {
+    position: relative;
+    z-index: 15;
+    display: block;
+    color: whitesmoke ;
+    background: transparent;
+    height: 3rem;
+    width:80%;
+    font-size: 1rem;
+    font-family: 'CopperplateLight', sans-serif;
+
+}
+
+
+.field{
+    margin-bottom: 0.5rem
+}
+#download{
+    padding: 1rem 0 1rem 0;
+    width: 75%;
+    background: rgba(28, 26, 27, 0.8);
+    border: 1px solid indianred;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'CopperplateDefault',sans-serif;
+    color:whitesmoke;
+    cursor: pointer;
+    align-self: flex-start;
+
+
+}
+
+.file-input-label {
+    background: #778b8c;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    color:rgba(28, 26, 27);
+    border: 1px solid indianred;
+    font-family:"CopperplateDefault",sans-serif;
+    display: flex;
+    align-items: center;
+    width: 75%;
+
+
+
+
+}
+
+.file-input {
+    display: none;
+}
+#card-canvas{
+
+    z-index:4;
+    position:absolute;
+    right:1.5rem;
+    top:1.5rem;
+
+
+}
